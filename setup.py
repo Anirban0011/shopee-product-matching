@@ -14,4 +14,5 @@ setup(
     author=" ",
     python_requires=">=3.8",
     packages=find_packages(where="main_folder"),
+    package_dir={"": "main_folder"},
 )
