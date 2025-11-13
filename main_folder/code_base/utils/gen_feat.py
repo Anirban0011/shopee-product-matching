@@ -1,7 +1,7 @@
 import torch
 import tqdm.notebook as tqdm
 import numpy as np
-from code_base.utils.cfg import CFG
+from main_folder.code_base.utils.cfg import CFG
 
 
 def gen_img_feats(

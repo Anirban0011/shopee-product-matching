@@ -3,9 +3,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from timm.layers import ScaledStdConv2d, ScaledStdConv2dSame, BatchNormAct2d
-from code_base.utils import ArcMarginProduct, CurricularFace
-from .gempool import GeM
-from .depthconv import DepthwiseSeparableConv
+from main_folder.code_base.utils import ArcMarginProduct, CurricularFace
+from main_folder.code_base.pipeline.gempool import GeM
+from main_folder.code_base.pipeline.depthconv import DepthwiseSeparableConv
 
 
 class ImgEncoder(nn.Module):

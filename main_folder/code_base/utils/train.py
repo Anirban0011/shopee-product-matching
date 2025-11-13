@@ -1,8 +1,8 @@
 import torch
 import tqdm.notebook as tqdm
 import numpy as np
-from code_base.utils.cfg import CFG
-from code_base.utils.f1_score import row_wise_f1_score
+from main_folder.code_base.utils.cfg import CFG
+from main_folder.code_base.utils.f1_score import row_wise_f1_score
 from sklearn.metrics import f1_score
 
 

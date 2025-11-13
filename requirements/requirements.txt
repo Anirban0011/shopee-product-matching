@@ -4,8 +4,13 @@ numpy
 pre-commit
 timm
 torch
-torchaudio
-torchvision
 torchsummary
+scikit-learn
 nltk
 unidecode
+transformers
+fastapi
+uvicorn[standard]
+faiss-cpu
+gradio
+huggingface_hub

@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import transformers as tfe
 from transformers import AutoModel, AutoConfig
-from code_base.utils import ArcMarginProduct, CurricularFace
+from main_folder.code_base.utils import ArcMarginProduct, CurricularFace
 
 
 class TextEncoder(nn.Module):
