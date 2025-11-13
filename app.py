@@ -1,7 +1,6 @@
 from fastapi import FastAPI, File, UploadFile, Form
 import uvicorn
 import torch
-import os
 import nltk
 nltk.download("stopwords")
 import numpy as np
