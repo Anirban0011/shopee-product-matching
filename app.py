@@ -7,6 +7,13 @@ import numpy as np
 from typing import List
 from inference import inference
 from main_folder.code_base.utils import CFG
+from dotenv import load_dotenv
+from fastapi.middleware.cors import CORSMiddleware
+import os
+
+load_dotenv()
+
+origins = os.getenv("CORS")
 
 TKN_PATH= ["bert-base-uncased"]
 IMG_SIZE = 256
@@ -16,6 +23,14 @@ img = True
 CFG.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 app = FastAPI(title="shopee-test-app")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 async def root():
