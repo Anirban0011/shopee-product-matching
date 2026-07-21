@@ -14,6 +14,7 @@ import os
 load_dotenv()
 
 origins = [os.getenv("CORS")]
+print(origins, "\n")
 
 TKN_PATH= ["bert-base-uncased"]
 IMG_SIZE = 256
@@ -22,7 +23,7 @@ img = True
 
 CFG.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-app = FastAPI(title="shopee-test-app")
+app = FastAPI(title="shopee-product-matching-app")
 
 app.add_middleware(
     CORSMiddleware,
