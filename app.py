@@ -13,7 +13,7 @@ import os
 
 load_dotenv()
 
-origins = os.getenv("CORS")
+origins = [os.getenv("CORS")]
 
 TKN_PATH= ["bert-base-uncased"]
 IMG_SIZE = 256
@@ -56,11 +56,3 @@ async def predict_image(files: List[UploadFile] = File(...),
 
 if __name__ == "__main__":
     uvicorn.run("app:app", host="0.0.0.0", port=7860)
-
-
-
-
-
-
-
-
