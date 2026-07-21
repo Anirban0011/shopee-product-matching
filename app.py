@@ -14,7 +14,6 @@ import os
 load_dotenv()
 
 origins = [os.getenv("CORS")]
-print(origins, "\n")
 
 TKN_PATH= ["bert-base-uncased"]
 IMG_SIZE = 256
